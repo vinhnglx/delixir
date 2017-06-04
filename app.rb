@@ -6,4 +6,3 @@ class Delixir < Sinatra::Base
   end
 end
 
-Delixir.run!

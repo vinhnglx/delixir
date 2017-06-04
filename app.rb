@@ -1,8 +1,7 @@
 require 'sinatra/base'
 
 class Delixir < Sinatra::Base
-  get '/' do
-    "Hello"
-  end
+  set :static, true
+  set :public, File.dirname(__FILE__) + "/docs"
 end
 
